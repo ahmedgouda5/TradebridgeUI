@@ -8,15 +8,7 @@ const STATS = [
   { key: "orders", label: "Orders Closed", target: 9200, suffix: "+" },
 ] as const;
 
-const TICKER_ITEMS = [
-  "12,400+ Verified Suppliers",
-  "Electronics",
-  "Agriculture",
-  "Construction Materials",
-  "Fashion & Apparel",
-  "Furniture",
-  "Food & Beverage",
-];
+
 
 function useCountUpOnVisible(targets: readonly number[], duration = 1400) {
   const ref = useRef<HTMLDivElement>(null);

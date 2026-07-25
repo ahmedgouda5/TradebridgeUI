@@ -12,7 +12,6 @@ import {
   Wifi,
   Wrench,
   Star,
-  Building2,
   ArrowRight,
   X,
   type LucideIcon,
@@ -36,14 +35,6 @@ const ICON_MAP: Record<string, LucideIcon> = {
   wrench: Wrench,
 };
 
-function StarRow({ rating }: { rating: number }) {
-  return (
-    <span className="flex items-center gap-1 text-[10px]">
-      <Star className="w-2.5 h-2.5 fill-amber-500 text-amber-500" />
-      {rating}
-    </span>
-  );
-}
 
 const TABS: { key: "all" | "trending" | "new"; label: string }[] = [
   { key: "all", label: "All" },
