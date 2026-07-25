@@ -11,7 +11,6 @@ import {
   Droplet,
   Wifi,
   Wrench,
-  Star,
   ArrowRight,
   X,
   type LucideIcon,

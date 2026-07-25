@@ -8,8 +8,6 @@ const STATS = [
   { key: "orders", label: "Orders Closed", target: 9200, suffix: "+" },
 ] as const;
 
-
-
 function useCountUpOnVisible(targets: readonly number[], duration = 1400) {
   const ref = useRef<HTMLDivElement>(null);
   const [values, setValues] = useState<number[]>(targets.map(() => 0));
