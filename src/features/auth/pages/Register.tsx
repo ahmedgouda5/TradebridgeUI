@@ -9,6 +9,7 @@ import {
   type AuthRole,
   type RegisterProps,
 } from "../types/auth.types";
+import { Link } from "react-router-dom";
 
 const INDUSTRIES = [
   "Electronics",
@@ -38,7 +39,6 @@ const ROLE_COPY: Record<
 export default function Register({
   initialRole = "buyer",
   onSubmit,
-  onSignInClick,
 }: RegisterProps) {
   const [role, setRole] = useState<AuthRole>(initialRole);
 
@@ -343,13 +343,12 @@ export default function Register({
           style={{ transitionDelay: ".1s" }}
         >
           Already have an account?{" "}
-          <button
-            type="button"
-            onClick={onSignInClick}
+          <Link
+            to="/auth/login"
             className="font-semibold text-amber-600 hover:text-amber-700"
           >
             Sign in
-          </button>
+          </Link>
         </p>
       </div>
     </div>
