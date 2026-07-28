@@ -64,9 +64,9 @@ function TestimonialCard({ t, index }: { t: Testimonial; index: number }) {
   );
 }
 
-export default function Testimonials() {
+export default function Testimonials({ id }: { id: string }) {
   return (
-    <section className="py-20 sm:py-24 bg-paper">
+    <section id={id} className="py-20 sm:py-24 bg-paper scroll-mt-24">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         <div className="text-center max-w-2xl mx-auto mb-16 reveal">
           <span className="tag-stamp text-xs font-semibold text-amber-700">

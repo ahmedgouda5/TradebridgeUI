@@ -42,7 +42,7 @@ function useCountUpOnVisible(targets: readonly number[], duration = 1400) {
   return { ref, values };
 }
 
-export default function Hero() {
+export default function Hero({ id }: { id: string }) {
   const { ref: ledgerRef, values } = useCountUpOnVisible(
     STATS.map((s) => s.target),
   );
@@ -54,8 +54,8 @@ export default function Hero() {
 
   return (
     <section
-      id="home"
-      className="relative z-10 pt-[px] ledger-bg overflow-hidden"
+      id={id}
+      className="relative z-10 pt-[px] ledger-bg overflow-hidden scroll-mt-24"
     >
       <div className="absolute -top-24 z-0 -right-24 w-[480px] h-[480px] bg-[#e0ab8c] rounded-full blur-3xl opacity-60 " />
       <div className="absolute top-40 -left-32 w-[380px] h-[380px] bg-verdant-50 rounded-full blur-3xl opacity-70" />

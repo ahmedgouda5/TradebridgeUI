@@ -8,12 +8,12 @@ import Contact from "../features/LandingPage/Contact";
 const Home = () => {
   return (
     <div className="bg-[#FAF8F4]">
-      <Hero />
-      <Catalog />
-      <Suppliers />
-      <About />
-      <Testimonials />
-      <Contact />
+      <Hero id="home" />
+      <Catalog id="categories" />
+      <Suppliers id="suppliers" />
+      <About id="about" />
+      <Testimonials id="testimonials" />
+      <Contact id="contact" />
     </div>
   );
 };

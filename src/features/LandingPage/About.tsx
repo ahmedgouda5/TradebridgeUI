@@ -109,12 +109,12 @@ const ACCENT_CLASSES: Record<Advantage["accent"], string> = {
   amber: "bg-amber-50 text-amber-600",
 };
 
-export default function About() {
+export default function About({ id }: { id: string }) {
   return (
     <>
       <section
-        id="how-it-works"
-        className="py-10 sm:py-10 mx-auto px-5 sm:px-8 bg-[#0F1B2E] text-paper relative overflow-hidden"
+        id={id}
+        className="py-10 sm:py-10 mx-auto px-5 sm:px-8 bg-[#0F1B2E] text-paper relative overflow-hidden scroll-mt-24"
       >
         <div className="absolute inset-0 grid-dots opacity-[0.04]" />
 
@@ -149,7 +149,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-20 sm:py-24 bg-white">
+      <section className="py-20 sm:py-24 bg-white scroll-mt-24">
         <div className="max-w-7xl mx-auto px-5 sm:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16 reveal">
             <span className="tag-stamp text-xs font-semibold text-amber-700">

@@ -54,16 +54,16 @@ function SupplierCard({
         </span>
       </div>
 
-      <button className="w-full mt-5 px-4 py-2.5 rounded-lg text-sm font-semibold border border-ink-200 text-ink-700 hover:bg-ink-900 hover:text-white hover:border-ink-900 transition-all duration-300 inline-flex items-center justify-center gap-1.5">
+      <button className="w-full mt-5 px-4 py-2.5 rounded-lg text-sm font-semibold border border-ink-200 text-[#13202F] hover:bg-[#13202F] hover:text-white hover:border-ink-900 transition-all duration-300 inline-flex items-center justify-center gap-1.5">
         <Send className="w-3.5 h-3.5" /> Contact Supplier
       </button>
     </div>
   );
 }
 
-export default function Suppliers() {
+export default function Suppliers({ id }: { id: string }) {
   return (
-    <section id="suppliers" className="py-20 sm:py-24 bg-paper">
+    <section id={id} className="py-20 sm:py-24 bg-paper scroll-mt-24">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         <Header
           title="Top Suppliers"

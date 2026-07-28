@@ -34,14 +34,13 @@ const ICON_MAP: Record<string, LucideIcon> = {
   wrench: Wrench,
 };
 
-
 const TABS: { key: "all" | "trending" | "new"; label: string }[] = [
   { key: "all", label: "All" },
   { key: "trending", label: "Trending" },
   { key: "new", label: "New" },
 ];
 
-export default function Catalog() {
+export default function Catalog({ id }: { id: string }) {
   const {
     categories,
     liveCategoryCounts,
@@ -59,7 +58,7 @@ export default function Catalog() {
 
   return (
     <>
-      <section id="categories" className="py-20 sm:py-24 bg-paper">
+      <section id={id} className="py-20 sm:py-24 bg-paper scroll-mt-24">
         <div className="max-w-7xl mx-auto px-5 sm:px-8">
           <Header
             title="Browse by Category"
@@ -109,7 +108,7 @@ export default function Catalog() {
         </div>
       </section>
 
-      <section id="products" className="py-20 sm:py-24 bg-white ">
+      <section id="products" className="py-20 sm:py-24 bg-white scroll-mt-24">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 ">
           <div className="flex items-center justify-between">
             <Header
@@ -169,7 +168,7 @@ export default function Catalog() {
             <p className="text-xs text-ink-400 font-mono">
               Showing {products.length} of {totalProductCount} products
             </p>
-            <button className="px-7 py-3.5 rounded-lg border border-ink-200 text-sm font-semibold text-ink-800 hover:bg-ink-900 hover:text-[#E2935C] hover:border-ink-900 transition-all duration-300 inline-flex items-center gap-2">
+            <button className="px-7 py-3.5 rounded-lg border border-[#13202F] text-sm font-semibold hover:text-white  hover:bg-[#13202F] hover:border-ink-900 transition-all duration-300 inline-flex items-center gap-2">
               View Full Catalog <ArrowRight className="w-3.5 h-3.5" />
             </button>
           </div>

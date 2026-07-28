@@ -1,6 +1,6 @@
-export default function Contact() {
+export default function Contact({ id }: { id: string }) {
   return (
-    <section id="contact" className="relative py-20 sm:py-24 bg-[#0F1B2E]">
+    <section id={id} className="relative py-20 sm:py-24 bg-[#0F1B2E] scroll-mt-24">
       <div className="absolute inset-0 grid-dots opacity-[0.05]" />
       <div className="absolute -top-20 left-1/4 w-[420px] h-[420px] bg-amber-600/20 rounded-full blur-3xl" />
 
