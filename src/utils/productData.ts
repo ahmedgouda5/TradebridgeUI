@@ -7,6 +7,10 @@ import {
   Coffee,
   Wifi,
   Wrench,
+  Lightbulb,
+  TrafficCone,
+  Table,
+  Droplet,
   type LucideIcon,
 } from "lucide-react";
 import type { Category, Product, Supplier } from "../types";
@@ -122,6 +126,10 @@ export const ICON_MAP: Record<string, LucideIcon> = {
   coffee: Coffee,
   wifi: Wifi,
   wrench: Wrench,
+  lightbulb: Lightbulb,
+  roadBarrier: TrafficCone,
+  table: Table,
+  droplet: Droplet,
 };
 
 export const SUPPLIERS: Supplier[] = [

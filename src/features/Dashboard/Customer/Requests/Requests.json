@@ -1,0 +1,29 @@
+[
+  {
+    "id": "REQ-7741",
+    "product": "Industrial LED Panel Light",
+    "supplier": "Hangzhou BrightTech Co.",
+    "qty": "800 units",
+    "date": "Jun 26, 2026",
+    "status": "pending",
+    "statusLabel": "Awaiting Quote"
+  },
+  {
+    "id": "REQ-7690",
+    "product": "Cold-Pressed Olive Oil (1L)",
+    "supplier": "Aegean Harvest Exports",
+    "qty": "2,000 bottles",
+    "date": "Jun 14, 2026",
+    "status": "progress",
+    "statusLabel": "Negotiating"
+  },
+  {
+    "id": "REQ-7544",
+    "product": "Modular Office Desk Frame",
+    "supplier": "Nordic Frame Co.",
+    "qty": "40 units",
+    "date": "May 30, 2026",
+    "status": "confirmed",
+    "statusLabel": "Quoted"
+  }
+]

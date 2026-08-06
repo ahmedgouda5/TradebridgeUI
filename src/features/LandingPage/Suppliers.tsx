@@ -63,7 +63,7 @@ function SupplierCard({
 
 export default function Suppliers({ id }: { id: string }) {
   return (
-    <section id={id} className="py-20 sm:py-24 bg-paper scroll-mt-24">
+    <section id={id} className="py-16 sm:py-14 bg-paper scroll-mt-24 ">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         <Header
           title="Top Suppliers"

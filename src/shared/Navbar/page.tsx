@@ -15,12 +15,10 @@ const Navbar = () => {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
 
-  // Hide drawer on route change
   useEffect(() => {
     setIsOpen(false);
   }, [location.pathname]);
 
-  // Prevent body scroll when drawer is open
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
     return () => {
@@ -87,7 +85,6 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* ── Hamburger Button: only on non-auth pages, mobile only ── */}
           {!isAuthPage && (
             <button
               id="navbar-hamburger"

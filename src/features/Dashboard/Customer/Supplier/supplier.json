@@ -1,0 +1,82 @@
+[
+  {
+    "id": "SUP-0118",
+    "name": "Hangzhou BrightTech Co.",
+    "industry": "Electronics Manufacturing",
+    "location": "Hangzhou, CN",
+    "rating": 4.8,
+    "reviews": 312,
+    "verified": true,
+    "iconKey": "cpu"
+  },
+  {
+    "id": "SUP-0224",
+    "name": "Indus Valley Grains Ltd.",
+    "industry": "Agricultural Exports",
+    "location": "Lahore, PK",
+    "rating": 4.9,
+    "reviews": 198,
+    "verified": true,
+    "iconKey": "wheat"
+  },
+  {
+    "id": "SUP-0337",
+    "name": "IronCore Metal Works",
+    "industry": "Steel & Metal Goods",
+    "location": "Gaziantep, TR",
+    "rating": 4.6,
+    "reviews": 154,
+    "verified": true,
+    "iconKey": "factory"
+  },
+  {
+    "id": "SUP-0451",
+    "name": "Daka Textile Mills",
+    "industry": "Apparel & Textiles",
+    "location": "Dhaka, BD",
+    "rating": 4.7,
+    "reviews": 267,
+    "verified": true,
+    "iconKey": "shirt"
+  },
+  {
+    "id": "SUP-0509",
+    "name": "Nordic Frame Co.",
+    "industry": "Furniture & Fixtures",
+    "location": "Gothenburg, SE",
+    "rating": 4.5,
+    "reviews": 89,
+    "verified": false,
+    "iconKey": "sofa"
+  },
+  {
+    "id": "SUP-0612",
+    "name": "Aegean Harvest Exports",
+    "industry": "Food & Beverage",
+    "location": "Izmir, TR",
+    "rating": 4.9,
+    "reviews": 221,
+    "verified": true,
+    "iconKey": "coffee"
+  },
+  {
+    "id": "SUP-0721",
+    "name": "Shenzhen NextWave Tech",
+    "industry": "Consumer Electronics",
+    "location": "Shenzhen, CN",
+    "rating": 4.4,
+    "reviews": 63,
+    "verified": true,
+    "iconKey": "wifi"
+  },
+  {
+    "id": "SUP-0834",
+    "name": "BuildRight Polymers",
+    "industry": "Construction Materials",
+    "location": "Karachi, PK",
+    "rating": 4.6,
+    "reviews": 182,
+    "verified": true,
+    "iconKey": "wrench"
+  }
+]

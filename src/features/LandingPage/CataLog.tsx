@@ -58,7 +58,7 @@ export default function Catalog({ id }: { id: string }) {
 
   return (
     <>
-      <section id={id} className="py-20 sm:py-24 bg-paper scroll-mt-24">
+      <section id={id} className="py-20 sm:py-24  scroll-mt-24">
         <div className="max-w-7xl mx-auto px-5 sm:px-8">
           <Header
             title="Browse by Category"
@@ -108,8 +108,8 @@ export default function Catalog({ id }: { id: string }) {
         </div>
       </section>
 
-      <section id="products" className="py-20 sm:py-24 bg-white scroll-mt-24">
-        <div className="max-w-7xl mx-auto px-5 sm:px-8 ">
+      <section id="products" className="py-16 sm:py-24 scroll-mt-14">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 ">
           <div className="flex items-center justify-between">
             <Header
               title="Featured Products"

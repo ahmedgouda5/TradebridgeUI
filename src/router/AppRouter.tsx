@@ -3,16 +3,15 @@ import AppLayout from "../layouts/AppLayout";
 import Home from "../pages/Home";
 import Register from "../features/auth/pages/Register";
 import SignIn from "../features/auth/pages/Login";
+import DashboardLayout from "../layouts/DashboardLayout";
+import DashboardRedirect from "../features/Dashboard/utils";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
     children: [
-      {
-        index: true,
-        element: <Home />,
-      },
+      { index: true, element: <Home /> },
       {
         path: "auth",
         children: [
@@ -27,5 +26,14 @@ export const router = createBrowserRouter([
         ],
       },
     ],
+  },
+  {
+    path: "dashboard",
+    element: (
+      <DashboardLayout>
+        <DashboardRedirect />
+      </DashboardLayout>
+    ),
+    children: [{ path: "*", element: null }],
   },
 ]);
